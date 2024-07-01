@@ -1,0 +1,22 @@
+services:
+  cash_register_tests:
+    container_name: cash_register_tests
+    stdin_open: true
+    tty: true
+    build:
+      context: ./
+      dockerfile: dockerfile
+    volumes:
+      - .:/app
+
+  cash_register:
+    container_name: cash_register
+    stdin_open: true
+    tty: true
+    build:
+      context: ./
+      dockerfile: dockerfile
+    volumes:
+      - .:/app
+    command: bundle exec ruby bin/main
+
