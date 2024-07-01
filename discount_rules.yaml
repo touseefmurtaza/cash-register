@@ -1,0 +1,16 @@
+---
+- type: BogoDiscount
+  product_code: GR1
+  applier: CEO
+  buy_quantity: 1
+  free_quantity: 1
+- type: ReducedPriceDiscount
+  product_code: SR1
+  applier: COO
+  minimum_quantity: 3
+  new_price: 4.50
+- type: PercentageDiscount
+  product_code: CF1
+  applier: VP
+  discount_percentage: 0.3333334
+  minimum_quantity: 3
